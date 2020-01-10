@@ -9,14 +9,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Снова ");
-            int i = 0;
-            while(true)
-            {
-                i = i + 1;
-                Console.Write(Math.Sin(i) * i * 2);
-            }
-
+            int a, b;
+            Console.Write("Введите первую цифру: ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите вторую цифру: ");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Сумма: {a+b} \nРазность: {a-b}\nУмножение: {a*b}\nДеление: {a/b}");
             Console.ReadKey();
         }
     }
